@@ -1,0 +1,112 @@
+.service-collapsible {
+  position: relative;
+  width: 1920px;
+  height: 1260px;
+  background-color: var(--secondarybackground-1);
+}
+
+.service-collapsible .floral-decor {
+  position: absolute;
+  top: 66px;
+  left: 824px;
+  font-family: var(--heading-h4-font-family);
+  font-weight: var(--heading-h4-font-weight);
+  font-size: var(--heading-h4-font-size);
+  line-height: var(--heading-h4-line-height);
+  letter-spacing: var(--heading-h4-letter-spacing);
+  color: var(--secondarycolor-1);
+  text-align: center;
+}
+
+.service-collapsible .party-wedding-img {
+  position: absolute;
+  width: 706px;
+  height: 991px;
+  top: 203px;
+  left: 919px;
+}
+/* main */
+.service-collapsible .main {
+  position: absolute;
+  top: 257px;
+  left: 242px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-collapsible .wedding-img {
+  width: 560px;
+  height: 315px;
+  object-fit: cover;
+}
+
+.service-collapsible .collapses {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  gap: 24px;
+}
+
+.service-collapsible .collapse-item{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-collapsible .collapse-header {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-collapsible .cross-line {
+  position: relative;
+  width: 560px;
+  height: 1px;
+  margin-top: -1px;
+  object-fit: cover;
+}
+
+.service-collapsible .header-bottom{
+  display: flex;
+  align-items: center;
+  width: 560px;
+}
+
+.service-collapsible .collapse-title {
+  flex: 1;
+  font-family: var(--heading-h6-font-family);
+  font-weight: var(--heading-h6-font-weight);
+  font-size: var(--heading-h6-font-size);
+  letter-spacing: var(--heading-h6-letter-spacing);
+  line-height: var(--heading-h6-line-height);
+  color: var(--secondarycolor-1);
+}
+
+.service-collapsible .fi-chevron {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.service-collapsible .fi-chevron.up {
+  transform: rotateX(180deg);
+}
+
+.service-collapsible .collapse-content {
+  position: relative;
+  display: none;
+  width: 499px;
+  font-family: var(--body-15px-subtle-font-family);
+  font-weight: var(--body-15px-subtle-font-weight);
+  font-size: var(--body-15px-subtle-font-size);
+  letter-spacing: var(--body-15px-subtle-letter-spacing);
+  line-height: var(--body-15px-subtle-line-height);
+  font-style: var(--body-15px-subtle-font-style);
+  color: var(--secondarycolor-2);
+}
+
+/* collapse-item active */
+.collapse-item.active .collapse-content {
+  display: block;
+}

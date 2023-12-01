@@ -69,10 +69,16 @@
   object-fit: cover;
 }
 
+.service-collapsible .btn-collapse {
+  display: block;
+  cursor: pointer;
+}
+
 .service-collapsible .header-bottom{
   display: flex;
   align-items: center;
   max-width: 560px;
+  text-align: start;
 }
 
 .service-collapsible .collapse-title {
@@ -85,10 +91,7 @@
   color: var(--secondarycolor-1);
 }
 
-.service-collapsible .btn-collapse {
-  width: 24px;
-  height: 24px;
-}
+
 .service-collapsible .fi-chevron {
   width: 24px;
   height: 24px;

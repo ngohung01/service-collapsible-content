@@ -1,6 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -28,7 +27,7 @@ html *::-webkit-scrollbar {
   width: 0px;
 }
 
-@font-face {
+/* @font-face {
   font-family: Instrument-Serif;
   src: url("/assets/fonts/InstrumentSerif-Regular.ttf") format("opentype");
-}
+} */

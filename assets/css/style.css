@@ -6,9 +6,7 @@
 }
 
 .service-collapsible .floral-decor {
-  position: absolute;
-  top: 66px;
-  left: 824px;
+  padding-top: 66px;
   font-family: var(--heading-h4-font-family);
   font-weight: var(--heading-h4-font-weight);
   font-size: var(--heading-h4-font-size);
@@ -22,14 +20,14 @@
   position: absolute;
   width: 706px;
   height: 991px;
-  top: 203px;
-  left: 919px;
+  top: calc((203 / 1260) * 100%);
+  left: calc((919 / 1920) * 100%);
 }
 /* main */
 .service-collapsible .main {
   position: absolute;
-  top: 257px;
-  left: 242px;
+  top: calc((257 / 1260) * 100%);
+  left: calc((242 / 1920) * 100%);
   display: inline-flex;
   flex-direction: column;
   gap: 24px;
@@ -45,8 +43,12 @@
   display: flex;
   flex-direction: column;
   width: 560px;
+  max-height: 544px;
   gap: 24px;
+  overflow-y: scroll;
 }
+
+
 
 .service-collapsible .collapse-item{
   display: inline-flex;
@@ -61,10 +63,8 @@
 }
 
 .service-collapsible .cross-line {
-  position: relative;
   width: 560px;
   height: 1px;
-  margin-top: -1px;
   object-fit: cover;
 }
 
@@ -84,12 +84,15 @@
   color: var(--secondarycolor-1);
 }
 
+.service-collapsible .btn-collapse {
+  width: 24px;
+  height: 24px;
+}
 .service-collapsible .fi-chevron {
   width: 24px;
   height: 24px;
-  cursor: pointer;
 }
-.service-collapsible .fi-chevron.up {
+.service-collapsible .btn-collapse.down .fi-chevron{
   transform: rotateX(180deg);
 }
 
@@ -109,4 +112,42 @@
 /* collapse-item active */
 .collapse-item.active .collapse-content {
   display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1919px) {
+  .service-collapsible {
+    position: fixed;
+    inset: 0;
+    overflow-y: scroll;
+    width: auto;
+    height: auto;
+    max-width: 1920px;
+    max-height: 1260px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .service-collapsible .party-wedding-img {
+    position: unset;
+    display: block;
+    margin: 76px auto;
+    width: 560px;
+    height: 785px;
+  }
+
+  .service-collapsible .main {
+    position: relative;
+    /* top: calc((203 / 1260) * 100%); */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 60px;
+  }
+  .service-collapsible .collapses {
+    /* overflow: auto; */
+    /* height: auto; */
+    max-height: none;
+    overflow: unset;
+  }
 }
